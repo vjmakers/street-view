@@ -14,12 +14,18 @@ var panoramas = {
       pano: 'outsideVJC'
     }],
     tiles: {
-      tileSize: [1024, 512],
-      worldSize: [2048, 1024],
+      // tileSize: [1024, 512],
+      // worldSize: [2048, 1024],
+      // centerHeading: 105,
+      // getTileUrl: function(pano, zoom, tileX, tileY) {
+      //   return 'https://developers.google.com/maps/documentation/javascript/examples/full/images/' +
+      //       'panoReception1024-' + zoom + '-' + tileX + '-' + tileY + '.jpg';
+      // }
+      tileSize: [1600, 800],
+      worldSize: [1600, 800],
       centerHeading: 105,
       getTileUrl: function(pano, zoom, tileX, tileY) {
-        return 'https://developers.google.com/maps/documentation/javascript/examples/full/images/' +
-            'panoReception1024-' + zoom + '-' + tileX + '-' + tileY + '.jpg';
+        return './test.jpg';
       }
     }
   })
