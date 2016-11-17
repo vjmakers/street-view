@@ -1,15 +1,16 @@
 var locations = {
-  outsideVJC: { lat: 1.3065322, lng: 103.9207787 },
-  insideVJC: { lat: 1.306611, lng: 103.9207418 }
+  outsideVJC: {lat: 1.3065322, lng: 103.9207787},
+  insideVJC:  {lat: 1.306611, lng: 103.9207418},
+  gardenVJC: {lat: 1.306402, lng: 103.9207328}
 };
 
 var panoramas = {
   outsideVJC: undefined,
   insideVJC: generatePanorama({
     name: 'insideVJC',
-    description: 'Victoria Junior College',
+    description: 'Victoria Junior College - Entrance',
     links: [{
-      heading: 70,
+      heading: 110,
       description: 'Exit',
       pano: 'outsideVJC'
     }],
@@ -28,6 +29,23 @@ var panoramas = {
         return './test.jpg';
       }
     }
+  }),
+  gardenVJC: generatePanorama({
+    name: 'gardenVJC',
+    description: 'Victoria Junior College-Garden',
+    links: [{
+      heading: -110,
+      description: 'Back',
+      pano: 'insideVJC'
+    }],
+    tiles: {
+      tileSize: [8704, 4352],
+      worldSize: [8704, 4352],
+      centerHeading: 105,
+      getTileUrl: function(pano, zoom, tileX, tileY) {
+        return './garden.jpg';
+      }
+    }
   })
 };
 
@@ -37,7 +55,12 @@ var extraLinks = {
     heading: -110,
     pano: 'insideVJC'
   },
-  insideVJC: undefined
+  insideVJC: {
+    description: 'Concourse',
+    heading: -80,
+    pano : 'gardenVJC'
+  },
+  gardenVJC: undefined
 };
 
 var panoramaList = Object.keys(panoramas);
@@ -91,12 +114,12 @@ function initPanorama() {
 
     if (extraLinks[panoName]) {
       panorama.getLinks().push(extraLinks[panoName]);
-    }
+    } 
   });
 }
 
 function initialize() {
-  // Use the Street View service to find a pano ID on Pirrama Rd, outside VJC.
+  // Use the Street View service to find a pano ID outside VJC.
   var streetView = new google.maps.StreetViewService;
   streetView.getPanorama(
     { location: locations.outsideVJC },
