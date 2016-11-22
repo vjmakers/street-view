@@ -1,51 +1,71 @@
 var locations = {
-  outsideVJC: {lat: 1.3065322, lng: 103.9207787},
-  insideVJC:  {lat: 1.306611, lng: 103.9207418},
-  gardenVJC: {lat: 1.306402, lng: 103.9207328}
+  outsideVJC: { lat: 1.3065322, lng: 103.9207787 },
+  // Apparently locations are not needed.
+  entrance:  { lat: 1.306611, lng: 103.9207418 },
+  garden: { lat: 1.306402, lng: 103.9207328 }
 };
 
 var panoramas = {
   outsideVJC: undefined,
-  insideVJC: generatePanorama({
-    name: 'insideVJC',
+  entrance: generatePanorama({
+    name: 'entrance',
     description: 'Victoria Junior College - Entrance',
     links: [{
-      heading: 110,
+      heading: 70,
       description: 'Exit',
       pano: 'outsideVJC'
+    }, {
+      description: 'Concourse',
+      heading: -60,
+      pano : 'concourse'
     }],
     tiles: {
-      // tileSize: [1024, 512],
-      // worldSize: [2048, 1024],
-      // centerHeading: 105,
-      // getTileUrl: function(pano, zoom, tileX, tileY) {
-      //   return 'https://developers.google.com/maps/documentation/javascript/examples/full/images/' +
-      //       'panoReception1024-' + zoom + '-' + tileX + '-' + tileY + '.jpg';
-      // }
       tileSize: [1600, 800],
-      worldSize: [1600, 800],
-      centerHeading: 105,
-      getTileUrl: function(pano, zoom, tileX, tileY) {
-        return './test.jpg';
-      }
-    }
+      worldSize: [1600, 800]
+    },
+    centerHeading: 105,
+    tileUrl: './images/test.jpg'
   }),
-  gardenVJC: generatePanorama({
-    name: 'gardenVJC',
-    description: 'Victoria Junior College-Garden',
+  concourse: generatePanorama({
+    name: 'concourse',
+    description: 'Victoria Junior College - Concourse',
     links: [{
-      heading: -110,
+      heading: 40,
       description: 'Back',
-      pano: 'insideVJC'
+      pano: 'entrance'
+    }, {
+      description: 'Garden',
+      heading: 160,
+      pano : 'garden'
     }],
-    tiles: {
-      tileSize: [8704, 4352],
-      worldSize: [8704, 4352],
-      centerHeading: 105,
-      getTileUrl: function(pano, zoom, tileX, tileY) {
-        return './garden.jpg';
-      }
-    }
+    centerHeading: -100,
+    tileUrl: './images/concourse.jpg'
+  }),
+  garden: generatePanorama({
+    name: 'garden',
+    description: 'Victoria Junior College - Garden',
+    links: [{
+      heading: 20,
+      description: 'Back',
+      pano: 'concourse'
+    }, {
+      description: 'PT',
+      heading: 160,
+      pano : 'outsidePT'
+    }],
+    centerHeading: -80,
+    tileUrl: './images/garden.jpg'
+  }),
+  outsidePT: generatePanorama({
+    name: 'outsidePT',
+    description: 'Victoria Junior College - Outside the Performance Theatre',
+    links: [{
+      heading: 80,
+      description: 'Back',
+      pano: 'garden'
+    }],
+    centerHeading: -80,
+    tileUrl: './images/outside_pt.jpg'
   })
 };
 
@@ -53,14 +73,8 @@ var extraLinks = {
   outsideVJC: {
     description: 'VJC',
     heading: -110,
-    pano: 'insideVJC'
-  },
-  insideVJC: {
-    description: 'Concourse',
-    heading: -80,
-    pano : 'gardenVJC'
-  },
-  gardenVJC: undefined
+    pano: 'entrance'
+  }
 };
 
 var panoramaList = Object.keys(panoramas);
@@ -68,15 +82,27 @@ var panoramaList = Object.keys(panoramas);
 function generatePanorama(pano) {
   return function() {
     pano.links.forEach(function(pano) {
-      pano.pano = panoramas[pano.pano].location.pano;
+      if (panoramas[pano.pano] && panoramas[pano.pano].location) {
+        pano.pano = panoramas[pano.pano].location.pano;
+      }
     });
-    pano.tiles.tileSize = new google.maps.Size(pano.tiles.tileSize[0] || 1024, pano.tiles.tileSize[1] || 512);
-    pano.tiles.worldSize = new google.maps.Size(pano.tiles.worldSize[0] || 2048, pano.tiles.worldSize[1] || 1024);
+    pano.tiles || (pano.tiles = {});
+    pano.tiles.centerHeading = pano.centerHeading;
+    pano.tiles.getTileUrl = pano.getTileUrl || function() {
+      return pano.tileUrl;
+    };
+    pano.tiles.tileSize = pano.tiles.tileSize
+      ? new google.maps.Size(pano.tiles.tileSize[0], pano.tiles.tileSize[1])
+      : new google.maps.Size(3000, 1500);
+    pano.tiles.worldSize = pano.tiles.worldSize
+      ? new google.maps.Size(pano.tiles.worldSize[0], pano.tiles.worldSize[1])
+      : new google.maps.Size(3000, 1500);
 
     return {
       location: {
         pano: pano.name,
         description: pano.description,
+        // Apparently locations are not needed.
         latLng: new google.maps.LatLng(locations[name])
       },
       links: pano.links,
@@ -105,6 +131,11 @@ function initPanorama() {
     }
   );
 
+  panorama.setPov({
+    heading: -100,
+    pitch: 0
+  });
+
   // Add a link to our custom panorama from outside VJC.
   panorama.addListener('links_changed', function() {
     var currentPano = panorama.getPano();
@@ -114,7 +145,7 @@ function initPanorama() {
 
     if (extraLinks[panoName]) {
       panorama.getLinks().push(extraLinks[panoName]);
-    } 
+    }
   });
 }
 
