@@ -14,10 +14,6 @@ var panoramas = {
       [ 'outsideVJC', 70, 'Outside VJC' ],
       [ 'concourse', -60, 'Concourse' ]
     ],
-    tiles: {
-      tileSize: [1600, 800],
-      worldSize: [1600, 800]
-    },
     centerHeading: 105,
     tileUrl: './images/entrance.jpg'
   },
