@@ -19,7 +19,7 @@ var panoramas = {
       worldSize: [1600, 800]
     },
     centerHeading: 105,
-    tileUrl: './images/test.jpg'
+    tileUrl: './images/entrance.jpg'
   },
 
   concourse: {
