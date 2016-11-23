@@ -12,9 +12,9 @@ var panoramas = {
     description: 'Victoria Junior College - Entrance',
     links: [
       [ 'outsideVJC', 70, 'Outside VJC' ],
-      [ 'concourse', -60, 'Concourse' ]
+      [ 'concourse', 225, 'Concourse' ]
     ],
-    centerHeading: 105,
+    centerHeading: -55,
     tileUrl: './images/entrance.jpg'
   },
 
@@ -41,7 +41,7 @@ var panoramas = {
   outsidePT: {
     description: 'Victoria Junior College - Outside the Performance Theatre',
     links: [
-      [ 'garden', 80, 'Garden' ]
+      [ 'garden', 115, 'Garden' ]
     ],
     centerHeading: -80,
     tileUrl: './images/outside_pt.jpg'
