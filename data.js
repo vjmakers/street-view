@@ -21,20 +21,20 @@ var panoramas = {
   concourse: {
     description: 'Victoria Junior College - Concourse',
     links: [
-      [ 'entrance', 40, 'Entrance' ],
-      [ 'garden', 160, 'Garden' ]
+      [ 'entrance', 220, 'Entrance' ],
+      [ 'garden', 340, 'Garden' ]
     ],
-    centerHeading: -100,
+    centerHeading: 80,
     tileUrl: './images/concourse.jpg'
   },
 
   garden: {
     description: 'Victoria Junior College - Garden',
     links: [
-      [ 'concourse', 20, 'Concourse' ],
-      [ 'outsidePT', 160, 'Outside the Performance Theatre' ]
+      [ 'concourse', -30, 'Concourse' ],
+      [ 'outsidePT', 120, 'Outside the Performance Theatre' ]
     ],
-    centerHeading: -80,
+    centerHeading: -105,
     tileUrl: './images/garden.jpg'
   },
 
