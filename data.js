@@ -15,7 +15,7 @@ var panoramas = {
       [ 'concourse', 225, 'Concourse' ]
     ],
     centerHeading: -55,
-    tileUrl: './images/entrance.jpg'
+    tileUrl: './images/lmaooo.jpg'
   },
 
   concourse: {
