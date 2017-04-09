@@ -16,9 +16,10 @@ var panoramas = {
     description: 'Victoria Junior College - P005',
     links: [
       [ 'outsideVJC', 180],
-      [ 'P006', 280]
+      [ 'P006', -20],
+      [ 'P037',-270]
     ],
-    centerHeading: 70,
+    centerHeading: 80,
     tileUrl: './images/005.jpg'
   },
 
@@ -142,25 +143,45 @@ var panoramas = {
     tileUrl: './images/026.jpg'
   },
 
-  P022: {
-    description: 'Victoria Junior College - P022',
+  P027: {
+    description: 'Victoria Junior College - P027',
     links: [
-      [ 'P021', 100],
-      [ 'P023', -90]
+      [ 'P026', 100],
+      [ 'P029', -90]
     ],
-    centerHeading: 80,
-    tileUrl: './images/022.jpg'
+    centerHeading: 0,
+    tileUrl: './images/027.jpg'
   },
 
-  P023: {
-    description: 'Victoria Junior College - P023',
+  P029: {
+    description: 'Victoria Junior College - P029',
     links: [
-      [ 'P022', 100],
-      [ 'P024', -90]
+      [ 'P027', 100],
+      [ 'P030', -90]
     ],
     centerHeading: 80,
-    tileUrl: './images/023.jpg'
+    tileUrl: './images/029.jpg'
   },
+  P030: {
+    description: 'Victoria Junior College - P030',
+    links: [
+      [ 'P029', 100],
+      [ 'P037', -90]
+    ],
+    centerHeading: 80,
+    tileUrl: './images/030.jpg'
+  },
+  P037: {
+    description: 'Victoria Junior College - P037',
+    links: [
+      [ 'P030', 100]
+    ],
+    centerHeading: 80,
+    tileUrl: './images/037.jpg'
+  },
+
+
+
   
   
 
@@ -172,7 +193,7 @@ var panoramas = {
 };
 
 var startingLink = {
-  pano: 'P011',
+  pano: 'P005',
   heading: -110,
   description: 'VJC'
 };
