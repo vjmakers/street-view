@@ -4,7 +4,7 @@ var panoramaList = Object.keys(panoramas);
 
 function generatePanorama(pano, name) {
   var links = pano.links.map(function(link) {
-    link = { pano: link[0], heading: link[1], description: link[2] };
+    link = { pano: link[0], heading: link[1], description: link[2]};
 
     if (panoramaData[link.pano] && panoramaData[link.pano].location) {
       link.pano = panoramaData[link.pano].location.pano;
@@ -16,7 +16,7 @@ function generatePanorama(pano, name) {
   var tiles = pano.tiles || (pano.tiles = {});
   tiles.centerHeading = pano.centerHeading;
   tiles.getTileUrl = pano.getTileUrl || function() {
-    return pano.tileUrl;
+    return pano.tileUrl ;
   };
   tiles.tileSize = tiles.tileSize
     ? new google.maps.Size(pano.tiles.tileSize[0], pano.tiles.tileSize[1])
@@ -38,11 +38,13 @@ function generatePanorama(pano, name) {
   };
 }
 
+
 function initPanoramas() {
   panoramaList.forEach(function(key) {
     var pano = panoramas[key];
     if (pano) {
       pano = generatePanorama(pano, key);
+
     }
     panoramaData[key] = pano || panoramaData[key];
   });
@@ -52,7 +54,9 @@ function initStreetView() {
   panorama = new google.maps.StreetViewPanorama(
     document.getElementById('street-view'),
     {
+
       pano: panoramaData.outsideVJC.location.pano,
+
       // Register a provider for our custom panorama.
       panoProvider: function(pano) {
         return panoramaData[pano];
@@ -62,7 +66,8 @@ function initStreetView() {
 
   panorama.setPov({
     heading: -100,
-    pitch: 0
+    pitch: 10,
+    zoom: 0
   });
 
   // Add a link to our custom panorama from outside VJC.
