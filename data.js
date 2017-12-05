@@ -45,7 +45,7 @@ var panoramas = {
     tileUrl: './images/003.jpg'
   },
 
-   P004: {
+ P004: {
     description: 'Victoria Junior College - P004',
     links: [
       ['P005', -90],
@@ -335,8 +335,6 @@ var panoramas = {
     tileUrl: './images/036.jpg'
   },
 
-
-
   P037: {
     description: 'Victoria Junior College - P037',
     links: [
@@ -397,6 +395,73 @@ var panoramas = {
     ],
     centerHeading: -70,
     tileUrl: './images/043.jpg'
-  }
+  },
+
+  // TODO
+  // P044 - P062
+
+  P063: {
+    description: 'Concourse',
+    // TODO
+    links: [
+      ['P062', 0],
+      ['P064', -86]
+    ],
+    centerHeading: 140,
+    // TODO
+    tileUrl: './images/063.jpg'
+  },
+
+  P064: {
+    description: 'Concourse / Near General Office',
+    links: [
+      ['P063', 86],
+      ['P065', 200]
+    ],
+    centerHeading: 75,
+    tileUrl: './images/064.jpg'
+  },
+
+  P065: {
+    description: 'General Office',
+    links: [
+      ['P064', -200],
+      ['P066', 0]
+    ],
+    centerHeading: 90,
+    tileUrl: './images/065.jpg'
+  },
+
+  // TODO
+
+  P066: {
+    description: 'General Office',
+    links: [
+      ['P065', 0],
+      ['P067', 0]
+    ],
+    centerHeading: 0,
+    tileUrl: './images/066.jpg'
+  },
+
+  P067: {
+    description: 'General Office',
+    links: [
+      ['P066', 0],
+      ['P068', 0]
+    ],
+    centerHeading: 0,
+    tileUrl: './images/067.jpg'
+  },
+
+  P068: {
+    description: 'Beside LT1',
+    links: [
+      ['P067', 0],
+      ['P069', 0]
+    ],
+    centerHeading: 0,
+    tileUrl: './images/068.jpg'
+  },
 
 };

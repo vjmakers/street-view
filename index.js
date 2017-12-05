@@ -38,13 +38,19 @@ function generatePanorama(pano, name) {
   };
 }
 
+function resetPOV() {
+  panorama.setPov({
+    heading: -100,
+    pitch: 10,
+    zoom: 0
+  });
+}
 
 function initPanoramas() {
   panoramaList.forEach(function(key) {
     var pano = panoramas[key];
     if (pano) {
       pano = generatePanorama(pano, key);
-
     }
     panoramaData[key] = pano || panoramaData[key];
   });
@@ -64,11 +70,8 @@ function initStreetView() {
     }
   );
 
-  panorama.setPov({
-    heading: -100,
-    pitch: 10,
-    zoom: 0
-  });
+  resetPOV();
+  panorama.addListener('pano_changed', resetPOV);
 
   // Add a link to our custom panorama from outside VJC.
   panorama.addListener('links_changed', function() {
