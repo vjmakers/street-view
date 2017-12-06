@@ -7,7 +7,7 @@ var locations = {
 // EDIT THIS TO START FROM A CHOSEN IMAGE.
 // ---------------------------------------
 var startingLink = {
-  pano: 'P045',
+  pano: 'P001',
   heading: -110,
   description: 'VJC'
 };
@@ -582,8 +582,8 @@ var panoramas = {
     description: 'Victoria Junior College - P062',
     links: [
       ['P061', 10],
-      ['P063', -90]
-
+      ['P063', -90],
+      ['P073', 95]
     ],
     centerHeading: -80,
     tileUrl: './images/062.jpg'
@@ -653,27 +653,74 @@ var panoramas = {
     tileUrl: './images/068.jpg'
   },
 
-  // TODO
-
   P069: {
-    description: '',
+    description: 'T-block classrooms',
     links: [
-      ['P059', -180],
-      ['P070', 85],
-      ['P071', 85]
+      ['P059', 180],
+      ['P070', -10],
+      ['P071', 150]
     ],
-    centerHeading: 40,
+    centerHeading: 133,
     tileUrl: './images/069.jpg'
   },
 
   P070: {
-    description: '',
+    description: 'T-block classrooms',
     links: [
-      ['P069', -6],
-      ['P070', 85]
+      ['P069', 80]
     ],
-    centerHeading: 40,
+    centerHeading: 0,
     tileUrl: './images/070.jpg'
   },
 
+  P071: {
+    description: 'T-block classrooms',
+    links: [
+      ['P069', 55],
+      ['P072', -125]
+    ],
+    centerHeading: 180,
+    tileUrl: './images/071.jpg'
+  },
+
+  P072: {
+    description: 'Next to T-block classrooms',
+    links: [
+      ['P071', -6],
+      ['P073', -100]
+    ],
+    centerHeading: -55,
+    tileUrl: './images/072.jpg'
+  },
+
+  P073: {
+    description: 'Next to L-block',
+    links: [
+      ['P062', -95],
+      ['P072', 85],
+      ['P074', -185]
+    ],
+    centerHeading: 23,
+    tileUrl: './images/073.jpg'
+  },
+
+  P074: {
+    description: 'Next to L-block classrooms',
+    links: [
+      ['P073', -6],
+      ['P075', -100]
+    ],
+    centerHeading: 70,
+    tileUrl: './images/074.jpg'
+  },
+
+  P075: {
+    description: 'Near Concourse',
+    links: [
+      ['P063', -20],
+      ['P074', 80]
+    ],
+    centerHeading: -20,
+    tileUrl: './images/075.jpg'
+  },
 };
