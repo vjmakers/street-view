@@ -7,7 +7,7 @@ var locations = {
 // EDIT THIS TO START FROM A CHOSEN IMAGE.
 // ---------------------------------------
 var startingLink = {
-  pano: 'P041',
+  pano: 'P069',
   heading: -110,
   description: 'VJC'
 };
@@ -39,13 +39,14 @@ var panoramas = {
     description: 'Victoria Junior College - P003',
     links: [
       ['P004', 260],
-      ['P002', 80]
+      ['P002', 80],
+      ['P068', 315]
     ],
     centerHeading: 190,
     tileUrl: './images/003.jpg'
   },
 
- P004: {
+  P004: {
     description: 'Victoria Junior College - P004',
     links: [
       ['P005', -90],
@@ -339,7 +340,8 @@ var panoramas = {
     description: 'Victoria Junior College - P037',
     links: [
       ['P005', -90],
-      ['P039', 0]
+      ['P039', 0],
+      ['P068', -180]
     ],
     centerHeading: -20,
     tileUrl: './images/037.jpg'
@@ -399,13 +401,14 @@ var panoramas = {
 
   // TODO
   // P044 - P062
+  // Link 59 to 69
 
   P063: {
     description: 'Concourse',
     // TODO
     links: [
       ['P062', 0],
-      ['P064', -86]
+      ['P064', -90]
     ],
     centerHeading: 140,
     // TODO
@@ -415,53 +418,76 @@ var panoramas = {
   P064: {
     description: 'Concourse / Near General Office',
     links: [
-      ['P063', 86],
+      ['P063', 90],
       ['P065', 200]
     ],
-    centerHeading: 75,
+    centerHeading: 90,
     tileUrl: './images/064.jpg'
   },
 
   P065: {
-    description: 'General Office',
+    description: 'Near General Office',
     links: [
-      ['P064', -200],
-      ['P066', 0]
+      ['P064', 50],
+      ['P066', -50]
     ],
-    centerHeading: 90,
+    centerHeading: -100,
     tileUrl: './images/065.jpg'
   },
 
-  // TODO
-
   P066: {
-    description: 'General Office',
+    description: 'Near General Office',
     links: [
-      ['P065', 0],
-      ['P067', 0]
+      ['P068', -40],
+      ['P065', 120],
+      ['P067', -160]
     ],
-    centerHeading: 0,
+    centerHeading: 5,
     tileUrl: './images/066.jpg'
   },
 
   P067: {
-    description: 'General Office',
+    description: 'Near General Office',
     links: [
-      ['P066', 0],
-      ['P068', 0]
+      ['P065', 80],
+      ['P066', 0]
     ],
-    centerHeading: 0,
+    centerHeading: -100,
     tileUrl: './images/067.jpg'
   },
 
   P068: {
     description: 'Beside LT1',
     links: [
-      ['P067', 0],
-      ['P069', 0]
+      ['P003', -150],
+      ['P067', 85],
+      ['P037', -6]
     ],
-    centerHeading: 0,
+    centerHeading: 40,
     tileUrl: './images/068.jpg'
+  },
+
+  // TODO
+
+  P069: {
+    description: '',
+    links: [
+      ['P059', 85],
+      ['P070', 85]
+      ['P071', 85]
+    ],
+    centerHeading: 40,
+    tileUrl: './images/069.jpg'
+  },
+
+  P070: {
+    description: '',
+    links: [
+      ['P069', -6],
+      ['P070', 85]
+    ],
+    centerHeading: 40,
+    tileUrl: './images/070.jpg'
   },
 
 };

@@ -41,7 +41,7 @@ function generatePanorama(pano, name) {
 function resetPOV() {
   panorama.setPov({
     heading: -100,
-    pitch: 10,
+    pitch: 5,
     zoom: 0
   });
 }
