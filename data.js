@@ -7,7 +7,7 @@ var locations = {
 // EDIT THIS TO START FROM A CHOSEN IMAGE.
 // ---------------------------------------
 var startingLink = {
-  pano: 'P001',
+  pano: 'P078',
   heading: -110,
   description: 'VJC'
 };
@@ -49,20 +49,22 @@ var panoramas = {
   P004: {
     description: 'Victoria Junior College - P004',
     links: [
-      ['P005', -90],
-      ['P003', 45]
+      ['P005', -15],
+      ['P003', 75],
+      ['P006', 255],
+      ['P011', 165]
+      
     ],
-    centerHeading: -20,
+    centerHeading: 10,
     tileUrl: './images/004.jpg'
   },
 
   P005: {
     description: 'Victoria Junior College - P005',
     links: [
-      ['P004', 180],
-      ['P006', -90],
-      ['P037', 90],
-      ['P036', 0]
+      ['P004', 170],
+      ['P037', 80],
+      ['P036', -10]
     ],
     centerHeading: 80,
     tileUrl: './images/005.jpg'
@@ -71,10 +73,10 @@ var panoramas = {
   P006: {
     description: 'Victoria Junior College - P006',
     links: [
-      ['P005', 50,],
-      ['P007', 250]
+      ['P004', 85,],
+      ['P007', -95]
     ],
-    centerHeading: 80,
+    centerHeading: 100,
     tileUrl: './images/006.jpg'
   },
 
@@ -92,7 +94,7 @@ var panoramas = {
     description: 'Victoria Junior College - P008',
     links: [
       ['P007', 75],
-      ['P009', -125]
+      ['P009', -105]
     ],
     centerHeading: -30,
     tileUrl: './images/008.jpg'
@@ -113,7 +115,7 @@ var panoramas = {
     description: 'Victoria Junior College - P010',
     links: [
       ['P009', 100],
-      ['P011', -90]
+      ['P011', -80]
     ],
     centerHeading: 230,
     tileUrl: './images/010.jpg'
@@ -122,10 +124,10 @@ var panoramas = {
   P011: {
     description: 'Victoria Junior College - P011',
     links: [
-      ['P010', -20],
-      ['P005', 70],
-      ['P016', -110],
-      ['P012', 160]
+      ['P010', -15],
+      ['P004', 75],
+      ['P016', -105],
+      ['P012', 165]
     ],
     centerHeading: 30,
     tileUrl: './images/011.jpg'
@@ -173,10 +175,10 @@ var panoramas = {
   P016: {
     description: 'Victoria Junior College - P016',
     links: [
-      ['P011', 70],
-      ['P017', -200],
-      ['P018', -20],
-      ['P035', -110]
+      ['P011', 75],
+      ['P017', -195],
+      ['P018', -15],
+      ['P035', -105]
     ],
     centerHeading: 70,
     tileUrl: './images/016.jpg'
@@ -363,12 +365,12 @@ var panoramas = {
   P037: {
     description: 'Victoria Junior College - P037',
     links: [
-      ['P005', -90],
-      ['P039', 0],
-      ['P048', 90],
-      ['P068', -180]
+      ['P005', -100],
+      ['P039', -10],
+      ['P048', 80],
+      ['P068', 170]
     ],
-    centerHeading: -20,
+    centerHeading: -30,
     tileUrl: './images/037.jpg'
   },
 
@@ -442,7 +444,7 @@ var panoramas = {
     links: [
       ['P045', 135],
       ['P048', 45],
-      ['P062', -95]
+      ['P076', -95]
     ],
     centerHeading: 13,
     tileUrl: './images/047.jpg'
@@ -551,9 +553,9 @@ var panoramas = {
   P059: {
     description: 'Victoria Junior College - P059',
     links: [
-      ['P054', 90],
-      ['P060', -10],
-      ['P069', -102]
+      ['P054', 85],
+      ['P060', -5],
+      ['P069', -95]
     ],
     centerHeading: 100,
     tileUrl: './images/059.jpg'
@@ -582,9 +584,9 @@ var panoramas = {
   P062: {
     description: 'Victoria Junior College - P062',
     links: [
-      ['P061', 10],
-      ['P063', -90],
-      ['P073', 95]
+      ['P061', 20],
+      ['P076', -70],
+      ['P073', 110]
     ],
     centerHeading: -80,
     tileUrl: './images/062.jpg'
@@ -594,8 +596,9 @@ var panoramas = {
     description: 'Concourse',
     // TODO
     links: [
-      ['P062', 20],
-      ['P064', -90]
+      ['P062', 0],
+      ['P064', -90],
+      ['P075', 180]
     ],
     centerHeading: 140,
     // TODO
@@ -606,7 +609,8 @@ var panoramas = {
     description: 'Concourse / Near General Office',
     links: [
       ['P063', 90],
-      ['P065', 200]
+      ['P065', 180],
+      ['P076', 0]
     ],
     centerHeading: 90,
     tileUrl: './images/064.jpg'
@@ -625,9 +629,9 @@ var panoramas = {
   P066: {
     description: 'Near General Office',
     links: [
-      ['P068', -40],
+      ['P068', -60],
       ['P065', 120],
-      ['P067', -160]
+      ['P067', -150]
     ],
     centerHeading: 5,
     tileUrl: './images/066.jpg'
@@ -636,7 +640,6 @@ var panoramas = {
   P067: {
     description: 'Near General Office',
     links: [
-      ['P065', 80],
       ['P066', 0]
     ],
     centerHeading: -100,
@@ -647,8 +650,8 @@ var panoramas = {
     description: 'Beside LT1',
     links: [
       ['P003', -150],
-      ['P067', 85],
-      ['P037', -6]
+      ['P066', 75],
+      ['P037', -15]
     ],
     centerHeading: 40,
     tileUrl: './images/068.jpg'
@@ -657,9 +660,9 @@ var panoramas = {
   P069: {
     description: 'T-block classrooms',
     links: [
-      ['P059', 180],
+      ['P059', -100],
       ['P070', -10],
-      ['P071', 150]
+      ['P071', 170]
     ],
     centerHeading: 133,
     tileUrl: './images/069.jpg'
@@ -677,18 +680,19 @@ var panoramas = {
   P071: {
     description: 'T-block classrooms',
     links: [
-      ['P069', 55],
-      ['P072', -125]
+      ['P069', 75],
+      ['P072', -105]
     ],
-    centerHeading: 180,
+    centerHeading: 200,
     tileUrl: './images/071.jpg'
   },
 
   P072: {
     description: 'Next to T-block classrooms',
     links: [
-      ['P071', -6],
-      ['P073', -100]
+      ['P071', -10],
+      ['P073', -100],
+      ['P085', 170]
     ],
     centerHeading: -55,
     tileUrl: './images/072.jpg'
@@ -708,8 +712,9 @@ var panoramas = {
   P074: {
     description: 'Next to L-block classrooms',
     links: [
-      ['P073', -6],
-      ['P075', -100]
+      ['P073', -10],
+      ['P075', -100],
+      ['P077', 170]
     ],
     centerHeading: 70,
     tileUrl: './images/074.jpg'
@@ -724,4 +729,127 @@ var panoramas = {
     centerHeading: -20,
     tileUrl: './images/075.jpg'
   },
+
+  P076: {
+    description: 'P076',
+    links: [
+      
+      ['P047', 30],
+      ['P064', -60],
+      ['P062', 210]
+    ],
+    centerHeading: 100,
+    tileUrl: './images/076.jpg'
+  },
+
+  P077: {
+    description: 'P077',
+    links: [
+      
+      ['P076', 75],
+      ['P078', -105]
+    ],
+    centerHeading: 130,
+    tileUrl: './images/077.jpg'
+  },
+
+  P078: {
+    description: 'P078',
+    links: [
+      
+      ['P077', 75],
+      ['P079', -105],
+      ['P100', -15]
+    ],
+    centerHeading: -100,
+    tileUrl: './images/078.jpg'
+  },
+
+  P079: {
+    description: 'P079',
+    links: [
+      
+      ['P078', -100],
+      ['P081', -10]
+    ],
+    centerHeading: 35,
+    tileUrl: './images/079.jpg'
+  },
+
+  P081: {
+    description: 'P081',
+    links: [
+      
+      ['P079', 80],
+      ['P082', -100]
+    ],
+    centerHeading: 10,
+    tileUrl: './images/081.jpg'
+  },
+
+  P082: {
+    description: 'P082',
+    links: [
+      
+      ['P081', 170],
+      ['P083', 260]
+    ],
+    centerHeading: -20,
+    tileUrl: './images/082.jpg'
+  },
+
+  P082: {
+    description: 'P082',
+    links: [
+      
+      ['P081', 170],
+      ['P083', 260]
+    ],
+    centerHeading: -20,
+    tileUrl: './images/082.jpg'
+  },
+
+  P083: {
+    description: 'P083',
+    links: [
+      
+      ['P082', 80],
+      ['P084', -100]
+    ],
+    centerHeading: -110,
+    tileUrl: './images/083.jpg'
+  },
+
+  P084: {
+    description: 'P084',
+    links: [
+      
+      ['P083', 80],
+      ['P085', -100]
+    ],
+    centerHeading: -105,
+    tileUrl: './images/084.jpg'
+  },
+
+  P085: {
+    description: 'P085',
+    links: [
+      
+      ['P084', 170],
+      ['P072', -55]
+    ],
+    centerHeading: -20,
+    tileUrl: './images/085.jpg'
+  },
+
+  P100: {
+    description: 'P100',
+    links: [
+      
+      ['P078', -55]
+    ],
+    centerHeading: -120,
+    tileUrl: './images/100.jpg'
+  },
+
 };
