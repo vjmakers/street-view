@@ -16,7 +16,7 @@ var panoramas = {
   outsideVJC: undefined,
 
   P001: {
-    description: 'Victoria Junior College - P001',
+    description: 'Outside Guardhouse',
     links: [
       ['outsideVJC', 75],
       ['P002', 255]
@@ -26,7 +26,7 @@ var panoramas = {
   },
   
   P002: {
-    description: 'Victoria Junior College - P002',
+    description: 'Treehouse - First Stairs',
     links: [
       ['P003', 260],
       ['P001', 80]
@@ -36,7 +36,7 @@ var panoramas = {
   },
 
   P003: {
-    description: 'Victoria Junior College - P003',
+    description: 'Treehouse - Second Stairs',
     links: [
       ['P004', 260],
       ['P002', 80],
@@ -47,7 +47,7 @@ var panoramas = {
   },
 
   P004: {
-    description: 'Victoria Junior College - P004',
+    description: 'Outside Canteen',
     links: [
       ['P005', -15],
       ['P003', 75],
@@ -60,7 +60,7 @@ var panoramas = {
   },
 
   P005: {
-    description: 'Victoria Junior College - P005',
+    description: 'Outside Bookshop',
     links: [
       ['P004', 170],
       ['P037', 80],
@@ -71,7 +71,7 @@ var panoramas = {
   },
 
   P006: {
-    description: 'Victoria Junior College - P006',
+    description: 'Canteen/Near Sink',
     links: [
       ['P004', 85,],
       ['P007', -95]
@@ -81,7 +81,7 @@ var panoramas = {
   },
 
   P007: {
-    description: 'Victoria Junior College - P007',
+    description: 'Canteen/Teachers' Table',
     links: [
       ['P006', 120],
       ['P008', 210]
@@ -91,7 +91,7 @@ var panoramas = {
   },
 
   P008: {
-    description: 'Victoria Junior College - P008',
+    description: 'Canteen',
     links: [
       ['P007', 75],
       ['P009', -105]
@@ -101,7 +101,7 @@ var panoramas = {
   },
 
   P009: {
-    description: 'Victoria Junior College - P009',
+    description: 'Canteen/Near Malay Food Stall',
     links: [
       ['P008', 185],
       ['P010', -85],
@@ -112,7 +112,7 @@ var panoramas = {
   },
 
   P010: {
-    description: 'Victoria Junior College - P010',
+    description: 'Canteen/Outside Band Room',
     links: [
       ['P009', 100],
       ['P011', -80]
@@ -122,7 +122,7 @@ var panoramas = {
   },
 
   P011: {
-    description: 'Victoria Junior College - P011',
+    description: 'Fitness Corner/Outside Canteen',
     links: [
       ['P010', -15],
       ['P004', 75],
@@ -134,7 +134,7 @@ var panoramas = {
   },
 
   P012: {
-    description: 'Victoria Junior College - P012',
+    description: 'Fitness Corner/Near Grandstand',
     links: [
       ['P011', 80],
       ['P013', -55]
@@ -144,7 +144,7 @@ var panoramas = {
   },
 
   P013: {
-    description: 'Victoria Junior College - P013',
+    description: 'Grandstand',
     links: [
       ['P012', 35],
       ['P014', 260]
@@ -154,7 +154,7 @@ var panoramas = {
   },
 
   P014: {
-    description: 'Victoria Junior College - P014',
+    description: 'Soccer Field/Track',
     links: [
       ['P013', 75],
       ['P015', -105]
@@ -164,7 +164,7 @@ var panoramas = {
   },
 
   P015: {
-    description: 'Victoria Junior College - P015',
+    description: 'Soccer Field/Track',
     links: [
       ['P014', 80]
     ],
@@ -173,7 +173,7 @@ var panoramas = {
   },
 
   P016: {
-    description: 'Victoria Junior College - P016',
+    description: 'Hockey Board/Pathway to the Hall',
     links: [
       ['P011', 75],
       ['P017', -195],
@@ -185,7 +185,7 @@ var panoramas = {
   },
 
   P017: {
-    description: 'Victoria Junior College - P017',
+    description: 'Stairs Leading to Second Floor of Hall',
     links: [
       ['P016', 80]
       
@@ -195,7 +195,7 @@ var panoramas = {
   },
 
   P018: {
-    description: 'Victoria Junior College - P018',
+    description: 'Outside Gym/House Boards',
     links: [
       ['P016', 70],
       ['P019', -110]
@@ -206,7 +206,7 @@ var panoramas = {
   },
 
   P019: {
-    description: 'Victoria Junior College - P019',
+    description: 'Outside Gym',
     links: [
       ['P020', -130],
       ['P018', 60]
@@ -216,7 +216,7 @@ var panoramas = {
   },
 
   P020: {
-    description: 'Victoria Junior College - P020',
+    description: 'Canteen/Outside Toilets',
     links: [
       ['P019', 150],
       ['P026', -110]
@@ -226,7 +226,7 @@ var panoramas = {
   },
 
   P022: {
-    description: 'Victoria Junior College - P022',
+    description: 'Outdoor Court',
     links: [
       ['P024', -104],
       ['P026', -14]
@@ -236,7 +236,7 @@ var panoramas = {
   },
 
   P024: {
-    description: 'Victoria Junior College - P024',
+    description: 'Infront of Parade Square',
     links: [
       ['P022', 80],
       ['P025', -100]
@@ -246,7 +246,7 @@ var panoramas = {
   },
 
   P025: {
-    description: 'Victoria Junior College - P025',
+    description: 'Parade Square/Near Fountain',
     links: [
       ['P024', 75],
       ['P041', 255]
@@ -257,7 +257,7 @@ var panoramas = {
 
 
   P026: {
-    description: 'Victoria Junior College - P026',
+    description: 'Outside Hall',
     links: [
       ['P020', 70],
       ['P027', -110],
@@ -268,7 +268,7 @@ var panoramas = {
   },
 
   P027: {
-    description: 'Victoria Junior College - P027',
+    description: 'Approaching Indoor Court',
     links: [
       ['P026', 70],
       ['P028', -110]
@@ -278,7 +278,7 @@ var panoramas = {
   },
 
    P028: {
-    description: 'Victoria Junior College - P028',
+    description: 'Indoor Court',
     links: [
       ['P027', 75],
       ['P029', 255]
@@ -288,7 +288,7 @@ var panoramas = {
   },
 
   P029: {
-    description: 'Victoria Junior College - P029',
+    description: 'Indoor Court',
     links: [
       ['P027', -100],
       ['P030', -30]
@@ -298,7 +298,7 @@ var panoramas = {
   },
 
   P030: {
-    description: 'Victoria Junior College - P030',
+    description: 'Indoor Court',
     links: [
       ['P029', 90],
       ['P031', -90]
@@ -308,7 +308,7 @@ var panoramas = {
   },
 
   P031: {
-    description: 'Victoria Junior College - P031',
+    description: 'Beside Storage Rooms',
     links: [
       ['P030', 80],
       ['P033', -100]
@@ -318,10 +318,9 @@ var panoramas = {
     tileUrl: './images/031.jpg'
   },
 
-  
 
   P033: {
-    description: 'Victoria Junior College - P033',
+    description: 'Outside Hall/Stairs to 2nd floor of Hall',
     links: [
       ['P031', 80],
       ['P034', -80]
@@ -331,7 +330,7 @@ var panoramas = {
   },
 
   P034: {
-    description: 'Victoria Junior College - P034',
+    description: 'Outside Hall',
     links: [
       ['P035', 70],
       ['P033', -110]
@@ -341,7 +340,7 @@ var panoramas = {
   },
 
   P035: {
-    description: 'Victoria Junior College - P035',
+    description: 'Halls Entrance',
     links: [
       ['P016', 70],
       ['P034', -110]
@@ -351,7 +350,7 @@ var panoramas = {
   },
 
   P036: {
-    description: 'Victoria Junior College - P036',
+    description: 'Outside Canteen, Near Printing Shop',
     links: [
       
       ['P005', 50],
@@ -363,7 +362,7 @@ var panoramas = {
   },
 
   P037: {
-    description: 'Victoria Junior College - P037',
+    description: 'Outside LT AVA/Pathway to Canteen',
     links: [
       ['P005', -100],
       ['P039', -10],
@@ -375,7 +374,7 @@ var panoramas = {
   },
 
   P039: {
-    description: 'Victoria Junior College - P039',
+    description: 'Stone Tables Leading to Perfomance Theatre',
     links: [
       ['P036', 70],
       ['P037', -20],
@@ -386,7 +385,7 @@ var panoramas = {
   },
 
   P040: {
-    description: 'Victoria Junior College - P040',
+    description: 'Grand Piano/Stairs to Perfomance Theatre Level 2',
     links: [
       ['P039', -10],
       ['P041', 170],
@@ -397,7 +396,7 @@ var panoramas = {
   },
 
   P041: {
-    description: 'Victoria Junior College - P041',
+    description: 'Entrance to Perfomance Theatre',
     links: [
       ['P025', 0],
       ['P036', -60],
@@ -409,7 +408,7 @@ var panoramas = {
   },
 
   P042: {
-    description: 'Victoria Junior College - P042',
+    description: 'Performance Theatre',
     links: [
       ['P041', 55]
     ],
@@ -418,7 +417,7 @@ var panoramas = {
   },
 
   P043: {
-    description: 'Victoria Junior College - P043',
+    description: 'Outside LT5/Live Like a Victorian Mural',
     links: [
       ['P040', 0],
       ['P049', 180]
@@ -428,7 +427,7 @@ var panoramas = {
   },
 
   P045: {
-    description: 'Victoria Junior College - P045',
+    description: 'Outside LT3',
     links: [
       ['P049', 80],
       ['P047', -100],
@@ -440,7 +439,7 @@ var panoramas = {
   },
 
   P047: {
-    description: 'Victoria Junior College - P047',
+    description: 'Recycling Alley',
     links: [
       ['P045', 135],
       ['P048', 45],
@@ -451,7 +450,7 @@ var panoramas = {
   },
 
   P048: {
-    description: 'Victoria Junior College - P048',
+    description: 'Notice Boards near Koi Pond',
     links: [
       ['P047', 75],
       ['P037', -105]
@@ -461,7 +460,7 @@ var panoramas = {
   },
 
   P049: {
-    description: 'Victoria Junior College - P049',
+    description: 'Outside LT5',
     links: [
       ['P043', 0],
       ['P045', -90]
@@ -471,7 +470,7 @@ var panoramas = {
   },
 
   P051: {
-    description: 'Victoria Junior College - P051',
+    description: 'E Block',
     links: [
       ['P045', 120],
       ['P052', -150],
@@ -482,7 +481,7 @@ var panoramas = {
   },
 
   P052: {
-    description: 'Victoria Junior College - P052',
+    description: 'Outside VJ Choir room',
     links: [
       ['P051', 90],
       ['P053', -100]
@@ -492,7 +491,7 @@ var panoramas = {
   },
 
   P053: {
-    description: 'Victoria Junior College - P053',
+    description: 'Outside Drama Studio',
     links: [
       ['P052', 80]
     ],
@@ -500,7 +499,7 @@ var panoramas = {
     tileUrl: './images/053.jpg'
   },
   P054: {
-    description: 'Victoria Junior College - P054',
+    description: 'Stone Tables near Garden',
     links: [
       ['P055', -150],
       ['P051', 100],
@@ -512,7 +511,7 @@ var panoramas = {
   },
   
   P055: {
-    description: 'Victoria Junior College - P055',
+    description: 'Small Garden',
     links: [
       ['P056', -100],
       ['P054', 100]
@@ -522,7 +521,7 @@ var panoramas = {
   },
 
   P056: {
-    description: 'Victoria Junior College - P056',
+    description: 'Small Garden',
     links: [
       ['P055', 80]
     ],
@@ -531,7 +530,7 @@ var panoramas = {
   },
 
   P057: {
-    description: 'Victoria Junior College - P057',
+    description: 'T-block Classrooms',
     links: [
       ['P054', 80],
       ['P058', -110]
@@ -541,7 +540,7 @@ var panoramas = {
   },
 
   P058: {
-    description: 'Victoria Junior College - P058',
+    description: 'T-block Classrooms',
     links: [
       ['P057', 80]
       
@@ -551,7 +550,7 @@ var panoramas = {
   },
   
   P059: {
-    description: 'Victoria Junior College - P059',
+    description: 'Pathway to T-block/Garden',
     links: [
       ['P054', 85],
       ['P060', -5],
@@ -562,7 +561,7 @@ var panoramas = {
   },
   
   P060: {
-    description: 'Victoria Junior College - P060',
+    description: 'Garden',
     links: [
       ['P059', 90],
       ['P061', -100]
@@ -572,7 +571,7 @@ var panoramas = {
   },
   
   P061: {
-    description: 'Victoria Junior College - P061',
+    description: 'Garden/Towards Concourse',
     links: [
       ['P059', 90],
       ['P062', -90]
@@ -582,7 +581,7 @@ var panoramas = {
   },
 
   P062: {
-    description: 'Victoria Junior College - P062',
+    description: 'Concourse/Stairs to Computer Lab',
     links: [
       ['P061', 20],
       ['P076', -70],
@@ -731,7 +730,7 @@ var panoramas = {
   },
 
   P076: {
-    description: 'P076',
+    description: 'Infront of Concourse',
     links: [
       
       ['P047', 30],
@@ -743,7 +742,7 @@ var panoramas = {
   },
 
   P077: {
-    description: 'P077',
+    description: 'Outside Science Labs',
     links: [
       
       ['P076', 75],
@@ -754,7 +753,7 @@ var panoramas = {
   },
 
   P078: {
-    description: 'P078',
+    description: 'Science Talent Corner',
     links: [
       
       ['P077', 75],
@@ -766,7 +765,7 @@ var panoramas = {
   },
 
   P079: {
-    description: 'P079',
+    description: 'Synapse',
     links: [
       
       ['P078', -100],
@@ -777,7 +776,7 @@ var panoramas = {
   },
 
   P081: {
-    description: 'P081',
+    description: 'Stairs to V Block Classrooms',
     links: [
       
       ['P079', 80],
@@ -788,7 +787,7 @@ var panoramas = {
   },
 
   P082: {
-    description: 'P082',
+    description: 'Outside Math Room',
     links: [
       
       ['P081', 170],
@@ -799,7 +798,7 @@ var panoramas = {
   },
 
   P082: {
-    description: 'P082',
+    description: 'Staffroom - Scrabbleboard',
     links: [
       
       ['P081', 170],
@@ -810,7 +809,7 @@ var panoramas = {
   },
 
   P083: {
-    description: 'P083',
+    description: 'Staffroom',
     links: [
       
       ['P082', 80],
@@ -821,7 +820,7 @@ var panoramas = {
   },
 
   P084: {
-    description: 'P084',
+    description: 'Staffroom',
     links: [
       
       ['P083', 80],
@@ -832,7 +831,7 @@ var panoramas = {
   },
 
   P085: {
-    description: 'P085',
+    description: 'Staffroom',
     links: [
       
       ['P084', 170],
@@ -843,7 +842,7 @@ var panoramas = {
   },
 
   P100: {
-    description: 'P100',
+    description: 'Makers Club',
     links: [
       
       ['P078', -55]
