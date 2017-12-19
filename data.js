@@ -7,9 +7,9 @@ var locations = {
 // EDIT THIS TO START FROM A CHOSEN IMAGE.
 // ---------------------------------------
 var startingLink = {
-  pano: 'P078',
+  pano: 'P001',
   heading: -110,
-  description: 'VJC'
+  description: 'Outside Guardhouse'
 };
 
 var panoramas = {
@@ -81,7 +81,7 @@ var panoramas = {
   },
 
   P007: {
-    description: 'Canteen/Teachers' Table',
+    description: 'Canteen/Teachers Table',
     links: [
       ['P006', 120],
       ['P008', 210]
